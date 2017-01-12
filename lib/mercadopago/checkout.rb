@@ -15,9 +15,7 @@ module MercadoPago
     def self.create_preference(access_token, data)
       payload = JSON.generate(data)
 
-      MercadoPago::Request
-        .wrap_post("/checkout/preferences?access_token=#{access_token}",
-                   payload)
+      MercadoPago::Request.wrap_post("/checkout/preferences?access_token=#{access_token}", payload)
     end
 
     #
@@ -45,9 +43,7 @@ module MercadoPago
     def self.create_preapproval_payment(access_token, data)
       payload = JSON.generate(data)
 
-      MercadoPago::Request
-        .wrap_post("/preapproval?access_token=#{access_token}",
-                   payload)
+      MercadoPago::Request.wrap_post("/preapproval?access_token=#{access_token}", payload)
     end
 
     #
