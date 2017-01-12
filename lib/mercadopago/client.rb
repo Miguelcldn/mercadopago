@@ -146,7 +146,6 @@ module MercadoPago
     #
     # Performs a generic GET to the given URL
     #
-    # - access_token: the MercadoPago account access token
     # - url: the URL to request
     #
     def get(url)
@@ -156,7 +155,6 @@ module MercadoPago
     #
     # Performs a generic POST to the given URL
     #
-    # - access_token: the MercadoPago account access token
     # - url: the URL to request
     # - data: the data to send along the request
     #
