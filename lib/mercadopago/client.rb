@@ -163,9 +163,7 @@ module MercadoPago
     def post(url, data)
       payload = JSON.generate(data)
 
-      MercadoPago::Request
-        .wrap_post("#{url}?access_token=#{access_token}",
-                  payload)
+      MercadoPago::Request.wrap_post("#{url}?access_token=#{access_token}", payload)
     end
 
     #
